@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Star Bucks</title>
+</head>
+<body>
+<section id="nav-bar" class="container row">
+
+            <div class="logo">
+                <img src="./images/logo.png" alt="">
+            </div>
+            <ul class="nav-icon row">
+                <li class="links"><a href="#Home">Home</a></li>
+                <li class="links"><a href="Menu"> Menu</a></li>
+                <li class="links"><a href="What"> What's New</a></li>
+                <li class="links"><a href="Contact">Contact</a></li>
+            </ul>
+
+</section>
+
+<section id="starBucks-main">
+    <div class="circal" id="backgroundChange">
+
+    </div>
+    <div class="container row" id="starBucks">
+        <div class="starBucks-text">
+            <h2>It's not just coffee</h2>
+            <h2>It's <strong id="st">StarBucks</strong> 
+            </h2>
+
+                <p>Starbucks Corporation is an American multinational chain of coffeehouses and roastery reserves headquartered in Seattle, Washington. As the world's largest coffeehouse chain, Starbucks is seen to be the main representation of the United States' third wave of coffee culture</p>
+              <div class="hero-btn">
+                <button id="hero-btn" >Learn More</button>
+              </div>
+
+        </div>
+        <div class="starBucks-img">
+            <img id="main-img" src="./images/img1.png" alt="">
+            <img id="main-img2" src="./images/img2.png" alt="">
+            <img id="main-img3" src="./images/img3.png" alt="">
+            <div class="images-background"></div>
+            <ul class="s-icon">
+                <li><a href="https://www.facebook.com/Starbucks/" target="_blank"><img  src="./images/facebook.png" alt=""></a></li>
+                <li><a href="https://cutt.ly/ObZ5MLq" target="_blank"><img src="./images/instagram.png" alt=""></a></li>
+                <li><a href="https://www.instagram.com/starbucks/?hl=en" target="_blank"><img src="./images/twitter.png" alt=""></a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="thumb-btn">
+        <ul>
+            <li><img src="./images/thumb1.png" alt="" id="green"  onclick="ImageChangeGreen()"></li>
+            <li><img src="./images/thumb2.png" alt="" id="red"  onclick="ImageChangeRed()">
+            </li>
+            <li><img src="./images/thumb3.png" alt=""  id="pink" onclick="ImageChangePink()">
+            </li>
+
+        </ul>
+    </div>
+
+</section>
+
+<script>
+    // function imageHandler(anything) {
+    //     document.querySelector(".main-img").src = anything
+    //     console.log("clicked");
+    // }
+    const ImageChangeGreen=()=>{
+       document.getElementById("main-img").style.display="block";
+       document.getElementById("main-img3").style.display="none";
+       document.getElementById("main-img2").style.display="none";
+       document.getElementById("hero-btn").style.backgroundColor="#017143"
+       document.getElementById("st").style.color="#017143"
+
+
+    }
+    const ImageChangeRed=()=>{
+       document.getElementById("main-img").style.display="none";
+       document.getElementById("main-img3").style.display="none";
+       document.getElementById("main-img2").style.display="block";
+       document.getElementById("hero-btn").style.backgroundColor="#ce4e64"
+       document.getElementById("st").style.color="#ce4e64"
+
+    }
+    const ImageChangePink=()=>{
+       document.getElementById("main-img").style.display="none";
+       document.getElementById("main-img3").style.display="block";
+       document.getElementById("main-img2").style.display="none";
+       document.getElementById("hero-btn").style.backgroundColor="#9c257a"
+       document.getElementById("st").style.color="#9c257a"
+    }
+</script>
+</body>
+</html> 
